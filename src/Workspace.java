@@ -21,13 +21,14 @@ public class Workspace {
 	// Check if the answer was correct
 	// IF Correct
 	if (userAnswer == correctAnswer){
-		System.out.println("Answer is correct. You recieve points.");
+		System.out.println("Answer is correct. You receive 5 points.");
 	}else{  
-		System.out.println("Answer is incorrect. You dont get any points");
+		System.out.println("Answer is incorrect. You receive no points");
 	}
 	//  Tell them it was correct 
 	//	Give them points
 	//  Make the next question harder
+	
 	// IF not correct
 	//  Tell them it was wrong
 	//  Tell them the correct answer 
