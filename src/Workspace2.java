@@ -125,7 +125,7 @@ if (studentAnswer == CorrectAnswer){
 	System.out.println("The correct answer is: " + CorrectAnswer);
 	//Make next question easier
 	if(HardnessofQuestion>10) {
-		HardnessofQuestion /= 10;
+		HardnessofQuestion = HardnessofQuestion / 10;
 		
 	}
 	}
@@ -177,7 +177,4 @@ System.out.println("End of round 4 and end of the game");
 }
 
 }
-
-
-
 

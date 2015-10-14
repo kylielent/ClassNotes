@@ -17,7 +17,7 @@ public class Workspace {
 	int CorrectAnswer = number1 + number2;
 	
 	// Ask the user to add these two numbers together
-	System.out.println("What is " + number1 + " + " + number2 + "?");
+	System.out.println("What integer is " + number1 + " + " + number2 + "?");
 	
 	// Read in their response
 	Scanner input = new Scanner(System.in);
@@ -38,7 +38,12 @@ public class Workspace {
 		System.out.println("Answer is incorrect.");
 		System.out.println("The correct answer is: " + CorrectAnswer);
 		//Make next question easier
+		if(HardnessofQuestion>10) {
+			HardnessofQuestion = HardnessofQuestion / 10;
+			
 		}
+		}
+	//end of round 1 
 	
 	int hardnessofquestion = 100;
 	// Round 2
@@ -69,12 +74,12 @@ public class Workspace {
 		//  Tell them it was wrong
 		//  Tell them the correct answer 
 		System.out.println("Answer is incorrect. You receive zero points.");
-		System.out.println("The correct answer is: " + Correctanswer );}}
+		System.out.println("The correct answer is: " + Correctanswer );
 		//  Do not give them points
 		//  Make next question easier
 
 	int hardnessOfquestion = 1000;
-	int score = 25;
+	int Score = 25;
 	// Round 3
 	
 		// Generate Random numbers
@@ -82,30 +87,29 @@ public class Workspace {
 		System.out.println("Number1 is : " + num1);
 		int num2 = (int)(Math.random() * hardnessOfquestion);
 		System.out.println("Number2 is : " + num2);
-		int CorrectAnswer = num1 + num2;
+		int Correctaanswer = num1 + num2;
 		
 		// Ask the user to add these two numbers together
 		System.out.println("What is " + num1 + " + " + num2 + "?");
 		
 		// Read in their response
-		Scanner input = new Scanner(System.in);
 		int StudentAnswer = input.nextInt();{
 		
 		// Check if the answer was correct
 		// IF Correct
-		if (StudentAnswer == CorrectAnswer){
+		if (StudentAnswer == Correctaanswer){
 		//  Tell them it was correct 
 		//	Give them points
 		System.out.println("Answer is correct.");
 		//  Make the next question harder
 		System.out.println("Hardness is: " +  hardnessOfquestion);
-		System.out.println("Score = " + score * score);
+		System.out.println("Score = " + score * Score);
 		}else{
 		// IF not correct
 		//  Tell them it was wrong
 		//  Tell them the correct answer 
 		System.out.println("Answer is incorrect. You receive zero points.");
-		System.out.println("The correct answer is: " + CorrectAnswer );}}
+		System.out.println("The correct answer is: " + Correctaanswer );}}
 		//  Do not give them points
 		//  Make next question easier
 
@@ -145,4 +149,4 @@ int hardnessofQuestion = 10000;
 	//  Make next question easier
 	
 
-
+	}}
